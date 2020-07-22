@@ -59,7 +59,7 @@ body{
 }
 
 .slider .menus ul{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 20%;
     display: flex;
@@ -110,7 +110,7 @@ body{
     position: absolute;
     
     background-color: black;
-    width: 1920px;
+    width: 100vw;
     height: 100vh;
     opacity: 35%;
 }
@@ -157,7 +157,7 @@ body{
 }
 
 .plans{
-    height: 120vh;
+    min-height: 120vh;
     background: linear-gradient( #000000, #FF4600);
     padding-top: 40px;
 }
@@ -170,10 +170,13 @@ body{
 }
 
 .boxes{
-    width: 80%;
+    width: 96%;
     margin: 0 auto;
-    display: flex;
-   justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+   
 }
 
 .box{
@@ -218,6 +221,7 @@ body{
     width: 80%;
     height: 55%;
     border-radius: 12px;
+    position: relative;
 
 }
 
@@ -287,15 +291,18 @@ body{
 
 
 .cards{
-    width: 75%;
-    margin:  0 auto;
+    
+    width: 95%;
+    margin: 0 auto;
     padding-top:50px ;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
 }
 
 .card{
-    width: 450px;
+    max-width: 450px;
     height: 200px;
     background-color: #fff;
     box-shadow: 0 0 10px 0 black;
@@ -329,8 +336,11 @@ body{
     color: rebeccapurple;
 }
 .testimonials span{
+    display: block;
+    text-align: right; 
+  margin-right: 10px;
   color: rebeccapurple;
-  margin-left: 290px;
+  
 }
 
 .see-more{
@@ -345,11 +355,13 @@ body{
 }
 
 .see-more p{
+    text-align: center;
+    font-size: 24px;
     
 }
 
 footer{
-    height: 300px;
+  
     background: rgb(63, 60, 60);
 }
 
@@ -406,4 +418,160 @@ li i{
     margin-top: 20px;
     color: rgb(255, 255, 255);
     font-size: 12px;
+}
+
+
+@media(max-width:768px){
+    .overlay{
+        width: 100vw;
+    }
+
+    .inner-section{
+        padding: 0;
+        padding-top:30% ;
+    }
+
+    .text h1{
+        
+        font-size: 30px;
+    }
+
+    .text h3 {
+        font-size: 18px;
+    }
+    .action{
+        width: 90%;
+    }
+   .boxes{
+       grid-template-columns: 1fr 1fr;
+   }
+   .box2{
+       margin-top: auto;
+   }
+   .box3{
+
+       margin-bottom: 15%;
+   }
+   .cards{
+       width: 98%;
+       height: 150px;
+   } 
+   .quote p {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.see-more p {
+    font-size: 20px;
+}
+.footer{
+    height: auto;
+}
+.inner-footer{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.slider .menus ul {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .menus ul li a{
+    font-size: 24px;
+}
+.slider .menus ul li span{
+    font-size: 12px;
+}
+
+
+
+}
+
+@media(max-width:430px){
+    .inner-section{
+        text-align: left;
+    }
+    .action{
+        flex-direction: column;
+        
+        padding-top:30px;
+    }
+    .btn{
+        margin-top: 30px;
+        border-radius: 5%;
+    }
+    .boxes{
+        grid-template-columns: 1fr ;
+        grid-gap: 20px;
+    }
+    .box3{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 90%;
+    }
+
+    .testimonials{
+        height: 600px;
+    }
+
+    .see-more p {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .inner-footer{
+        grid-template-columns: 1fr;
+    }
+    .social{
+        margin-top: 20px;
+    }
+
+    .slider{
+        max-width: 200px;
+        opacity: 0.9;
+        border-left: #858585a8 1px solid;
+        transform: translateX(400px);
+    }
+
+    .show{
+        transform: translateX(210px);
+    }
+    .slider .menus ul {
+        position: fixed;
+        padding: 10% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+
+    .slider .menus ul li a{
+        font-size: 24px;
+        
+    }
+
+    .slider .menus ul li{
+        margin-top: 20px;
+    }
+    .slider .menus ul li span{
+        font-size: 12px;
+    }
+    
+    .slider .close{
+        color: #fff;
+        position: absolute;
+        font-size: 24px;
+        left:  5%;
+        top:   1%;
+        opacity: 0.9;
+    }
+
 }

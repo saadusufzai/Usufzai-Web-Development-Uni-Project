@@ -6,13 +6,14 @@
 .contact-box{
     position: relative;
     left: 40px;
-    width: 530px;
+    max-width: 530px;
     height:100vh;
     background-color: rgba(0, 0, 0, 0.541);
     color: #fff;
 }
 
 .contact-box form{
+   
     padding: 10px;
 }
 
@@ -32,6 +33,7 @@ form textarea{
     margin-top: 20px;
     width: 90%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -41,15 +43,40 @@ input[type=text],input[type=email],input[type=button]{
     border-radius:3px ;
     margin-top:5px ;
 }
-input[type=button]{
+input[type=submit]{
     float: right;
     margin: 10%;
     font-size: 16px;
     padding: 8px 25px;
     font-weight: 500;
+    border: none;
+    border-radius: 5%;
 }
 
-input[type=button]:hover{
+input[type=submit]:hover{
     cursor: pointer;
     opacity: 0.9;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+.intro{
+    width: 95%;
+}
+
+
+@media(max-width:430px){
+    input[type=submit]{
+        float: left;
+        margin: 20px 0 ;
+        font-size: 16px;
+        padding: 8px 25px;
+        font-weight: 500;
+    }
+
+    form textarea{
+        width: 80%;
+    }
+    
 }
