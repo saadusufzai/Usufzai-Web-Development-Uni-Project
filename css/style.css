@@ -7,6 +7,7 @@
 
 body{
     overflow-x: hidden;
+    width: 100vw;
 }
 
 .bars{
@@ -472,7 +473,7 @@ li i{
 }
 
 .slider .menus ul {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 40%;
     display: flex;
