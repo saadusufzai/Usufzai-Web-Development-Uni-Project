@@ -1,14 +1,18 @@
 .about{
     padding-top: 10%;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    margin-bottom: 50px;
 }
 
 .about-text{
-    width: 60%;
+    width: 90%;
     text-align: justify;
+   
 }
 
 .about-text h1{
@@ -18,4 +22,10 @@
 .about-img img{
     width: 300px;
     
+}
+
+@media(max-width:430px){
+    .about{
+        grid-template-columns: 1fr;
+    }
 }
