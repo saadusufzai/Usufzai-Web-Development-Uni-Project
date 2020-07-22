@@ -1,0 +1,55 @@
+.contact{
+    background: url('../images/contact-bg.jpg') center  no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.contact-box{
+    position: relative;
+    left: 40px;
+    width: 530px;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: #fff;
+}
+
+.contact-box form{
+    padding: 10px;
+}
+
+.contact-box p{
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+form textarea{
+    width: 90%;
+    height: 150px;
+    border-radius: 3%;
+    margin-top: 5px;
+}
+
+.mail-name{
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=text],input[type=email],input[type=button]{
+    padding: 10px 30px;
+    border: none;
+    border-radius:3px ;
+    margin-top:5px ;
+}
+input[type=button]{
+    float: right;
+    margin: 10%;
+    font-size: 16px;
+    padding: 8px 25px;
+    font-weight: 500;
+}
+
+input[type=button]:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}

@@ -1,0 +1,76 @@
+.order{
+    background: url('../images/joshua-coleman-JfHRmaUP0z8-unsplash.jpg') center  no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.order-box{
+   margin: 0 auto;
+    width: 530px;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: #fff;
+}
+
+.contact-box form{
+    padding: 10px;
+}
+
+.contact-box p{
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+form textarea{
+    width: 90%;
+    height: 150px;
+    border-radius: 3%;
+    margin-top: 5px;
+}
+
+.mail-name{
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=text],input[type=email]{
+    padding: 10px 10px !important;
+    border: none;
+    border-radius:3px ;
+    margin-top:5px ;
+    margin-bottom: 10px;
+    width: 60%;
+}
+select, option{
+    width: 50%;
+    padding: 10px;
+    border:none;
+    border-radius: 5px 5px 0 0;
+}
+
+input[type=submit]{
+    width: 30%;
+    border: none;
+    border-radius: 3%;
+    margin-top: 50px;
+    font-size: 16px;
+    padding: 8px 25px;
+}
+
+form{
+    padding: 20px;
+}
+.form-group{
+    margin-top: 20px;
+}
+
+.social input{
+    width: 20%;
+}
+
+.price{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,21 @@
+.about{
+    padding-top: 10%;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text{
+    width: 60%;
+    text-align: justify;
+}
+
+.about-text h1{
+    letter-spacing: .3em;
+}
+
+.about-img img{
+    width: 300px;
+    
+}
