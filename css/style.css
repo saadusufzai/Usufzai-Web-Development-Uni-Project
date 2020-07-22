@@ -567,6 +567,7 @@ li i{
     }
     
     .slider .close{
+        z-index: 2;
         color: #fff;
         position: absolute;
         font-size: 24px;
