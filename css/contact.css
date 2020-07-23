@@ -65,6 +65,15 @@ input[type=submit]:hover{
     width: 95%;
 }
 
+.see-more{
+    background-color: rgb(11, 137, 255) !important;
+}
+.social input[type=text]{
+
+    border-right: 14px solid  rgb(11, 137, 255) ;
+}
+
+
 
 @media(max-width:430px){
     input[type=submit]{

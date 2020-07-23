@@ -74,3 +74,11 @@ form{
     display: flex;
     justify-content: space-between;
 }
+
+.see-more{
+    background-color: rgb(128, 206, 4) !important;
+}
+
+.social input[type=text]{
+    border-right: 14px solid rgb(128, 206, 4) ;
+}
