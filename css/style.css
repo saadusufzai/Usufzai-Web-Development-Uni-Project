@@ -8,7 +8,7 @@
 
 body{
     overflow-x: hidden;
-    width: 100%;
+   
 }
 
 .bars{
@@ -46,12 +46,15 @@ body{
 }
 
 .slider{
+    display: block;
     position: absolute;
+    top: 0;
+    right: 0;
     z-index: 1;
     background-color: #000000;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    transform: translateX(1300px);
+    transform: translateX(-100%);
     transition: transform ease-in 400ms;
 }
 
@@ -112,7 +115,7 @@ body{
     position: absolute;
     
     background-color: black;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     opacity: 35%;
 }
@@ -123,7 +126,7 @@ body{
 }
 .inner-section{
     position: relative;
-    padding: 160px;
+    padding: 10% 0;
     text-align: center;
 }
 
@@ -472,23 +475,79 @@ li i{
     grid-template-columns: repeat(2,1fr);
 }
 
+.slider{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #131212;
+    color: #616161;
+    width: 50%;
+    height: 100%;
+    opacity: 0.9;
+    padding: 30px;
+    border-right: rgb(80, 80, 80) 1px solid;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.show{
+    transform: translateX(-20px);
+}
 .slider .menus ul {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 40%;
+    position: fixed;
+    padding: 10% 5%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
+
 .slider .menus ul li a{
     font-size: 24px;
+    
+}
+
+.slider .menus ul li{
+    list-style: none;
+    margin-top: 20px;
 }
 .slider .menus ul li span{
     font-size: 12px;
 }
 
+.slider .close{
+    display: none;
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    font-size: 24px;
+    left:  5%;
+    top:   1%;
+    opacity: 0.9;
+}
 
 
+}
+
+@media(max-width:570px){
+    .boxes{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        
+    }
+
+
+    .box3{
+        left: 0;
+        margin-top: 0;
+    }
+    .cards{
+        width: 90%;
+    }
+    }
 }
 
 @media(max-width:430px){
@@ -528,7 +587,7 @@ li i{
 
     .testimonials{
         height: 600px;
-        width: 95%;
+        width: 100%;
     }
 
     .see-more p {
@@ -544,14 +603,23 @@ li i{
     }
 
     .slider{
-        max-width: 220px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #131212;
+        color: #616161;
+        width: 50%;
+        height: 100%;
         opacity: 0.9;
-        border-left: #858585a8 1px solid;
-        transform: translateX(415px);
+        padding: 30px;
+        border-right: rgb(80, 80, 80) 1px solid;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
     }
 
     .show{
-        transform: translateX(200px);
+        transform: translateX(-20px);
     }
     .slider .menus ul {
         position: fixed;
@@ -568,6 +636,7 @@ li i{
     }
 
     .slider .menus ul li{
+        list-style: none;
         margin-top: 20px;
     }
     .slider .menus ul li span{
@@ -575,6 +644,7 @@ li i{
     }
     
     .slider .close{
+        display: none;
         z-index: 2;
         color: #fff;
         position: absolute;

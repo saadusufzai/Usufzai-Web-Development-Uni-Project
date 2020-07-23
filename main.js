@@ -1,5 +1,5 @@
 document.querySelector('.bars').addEventListener('click',()=>{
-    document.querySelector('.slider').classList.add('show')
+    document.querySelector('.slider').classList.toggle('show')
 })
 
 document.querySelector('.close').addEventListener('click',()=>{
