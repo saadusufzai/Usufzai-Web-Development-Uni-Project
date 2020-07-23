@@ -509,7 +509,12 @@ li i{
         grid-template-columns: 1fr ;
         grid-gap: 20px;
     }
+
+    .box2{
+        box-shadow: none;
+    }
     .box3{
+        position: static;
         margin: 0;
         margin-bottom: 20px;
     }
@@ -522,6 +527,7 @@ li i{
 
     .testimonials{
         height: 600px;
+        width: 95%;
     }
 
     .see-more p {
