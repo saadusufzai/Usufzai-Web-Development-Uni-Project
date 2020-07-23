@@ -404,10 +404,12 @@ li i{
     margin: 0 auto;
 }
 
+
 .social input[type=text]{
-    padding: 12px 20px;
-    margin: 0;
+    padding: 10px 20px;
     border: none;
+    border-radius:3px ;
+    margin-top:5px ;
     border-right: 14px solid #FF4600;
 }
 
