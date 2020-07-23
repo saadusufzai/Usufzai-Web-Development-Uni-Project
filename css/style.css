@@ -514,9 +514,10 @@ li i{
         box-shadow: none;
     }
     .box3{
-        position: static;
-        margin: 0;
+        position: relative;
+        margin: 10px 0;
         margin-bottom: 20px;
+        left: 0;
     }
 
     .cards{
