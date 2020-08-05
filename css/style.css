@@ -26,6 +26,8 @@ body{
     display: flex;
     align-items: center;
     position:fixed;
+    width:100%;
+    z-index:100;
 }
 
 .inner-nav{
