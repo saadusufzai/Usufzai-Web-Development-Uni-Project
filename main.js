@@ -7,4 +7,3 @@ document.querySelector('.close').addEventListener('click',()=>{
 })
 
 
-var menus = document.querySelector('.menues')
