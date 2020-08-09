@@ -50,7 +50,7 @@ body{
 
 .slider{
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 1;
@@ -482,7 +482,7 @@ li i{
 
 .slider{
     display: block;
-    position: absolute;
+    
     top: 0;
     left: 0;
     background: #131212;
@@ -609,7 +609,7 @@ li i{
 
     .slider{
         display: block;
-        position: absolute;
+        
         top: 0;
         left: 0;
         background: #131212;

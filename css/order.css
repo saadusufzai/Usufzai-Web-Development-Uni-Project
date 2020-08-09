@@ -1,12 +1,13 @@
 .order{
     background: url('../images/joshua-coleman-JfHRmaUP0z8-unsplash.jpg') center  no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
+    padding-top: 10%;
 }
 .order-box{
-   margin: 0 auto;
+    margin: 0 auto;
     width: 530px;
-    height:100vh;
+    height:95vh;
     background-color: rgba(0, 0, 0, 0.692);
     color: #fff;
 }

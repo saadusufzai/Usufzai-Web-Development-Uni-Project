@@ -39,41 +39,36 @@
           <form action="connect.php" method="POST">
             <div >
               <label for="name">Your Name</label><br>
-              <input placeholder="John Doe" type="text" name="name" id="name">
+              <input placeholder="John Doe" type="text" name="firstName" id="name">
             </div>
             <div class="form-group">
               <label for="email">Your Email</label><br>
               <input  placeholder="user@example.com" type="email" name="email" id="email">
             </div>
             <div class="form-group">
-              <label for="package">Select your package</label><br>
-              <select  name="package" id="package">
-                <option value="trial">Trial</option>
-                <option value="pro">Pro</option>
-                <option value="premimum">Premimum</option>
+              <label>Select your package</label><br>
+              <select class="package" id="package" name="package" onchange="onChange()" >
+                <option    value="Trial">Trial  (0$)</option>
+                <option    value="Pro">Pro  (30$)</option>
+                <option    value="Plus">Plus (45$)</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="payment-option"> Select Payment option.</label><br><br>
-                 <label for="cod">In office</label>
-                 <input type="radio" name="cod" id="radio1">
-                 <label for="cod">Online</label>
-                 <input type="radio" name="cod" id="radio2">
-            </div>
+          
 
             <div class="form-group">
-              <label for="payment">Select payment method</label><br>
-              <select name="payment" id="payment">
-                <option value="back">Bank Transfer</option>
-                <option value="easy">Easy Paisa</option>
-                <option value="jazz">Jaaz Cash</option>
+              <label >Select payment method</label><br>
+              <select name="method" >
+                <option  name="method" value="Bank Transfer">Bank Transfer</option>
+                <option  name="method" value="Easy Paisa">Easy Paisa</option>
+                <option  name="method" value="Jazz Cash">Jaaz Cash</option>
               </select>
             </div>
             <div class="form-group price">
               <h2>Price</h2>
-              <h2>2000</h2>
+              
+              <h2 class="total">2000</h2>
             </div>
-            <input type="submit" value="Pay">
+            <input type="submit" name="insert" value="Pay">
           </form>
         </div>
       </section>
@@ -121,6 +116,27 @@
         </div>
       </footer>
       <script src="./main.js"></script>
-      <script src="./db_connection.js"></script>
+      <script>
+        
+        document.querySelector('.total').innerHTML = '0$'
+        const onChange = ()=>{
+        let e = document.querySelector('#package')
+        let opt = e.options[e.selectedIndex].value
+        let total = '0$'
+          console.log(total ) 
+          console.log(opt ) 
+          if(opt === 'Pro'){
+            total = '30$'
+          } else if (opt === 'Plus'){
+            total = '45$'
+          }else{
+            total = '0$'
+          }
+          document.querySelector('.total').innerHTML = total
+        }
+
+        
+        
+      </script>
 </body>
 </html>
