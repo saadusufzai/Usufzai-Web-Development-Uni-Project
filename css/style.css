@@ -670,3 +670,8 @@ li i{
     }
 
 }
+
+
+textarea:focus, input:focus{
+    outline: none;
+}

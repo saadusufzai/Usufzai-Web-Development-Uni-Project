@@ -111,7 +111,7 @@
         </div>
   
         <div class="copyright">
-          Copyright 2020  techwa.io | All rights are reserved by TECHWA.IO | Developed by Saad Aslam
+          Copyright 2020  techwa.io | All rights are reserved by TECHWA.IO | Developed by Saad Aslam & Talha Maiken
         </div>
       </footer>
       <script src="./main.js"></script>
