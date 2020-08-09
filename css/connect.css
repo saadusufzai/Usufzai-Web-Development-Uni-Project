@@ -1,0 +1,11 @@
+.success{
+    
+    display: block;
+    height: 50vh;
+    padding-top: 10%;
+    text-align: center;
+    line-height: 2em;
+}
+.link{
+    color: 282828 !important;
+}

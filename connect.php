@@ -34,7 +34,7 @@
         </div>
 	  </nav>
 	  
-	  
+ 
 <?php
 	
 $fname = $_POST['firstName'];
@@ -51,11 +51,11 @@ $method = $_POST['method'];
 
 
 	if($conn->query($sql) === TRUE){
-		echo' <div class="success">
+		echo'<div class="success">
 				<div class="success-box">
 				<h1>Thanks for choosing TECHWA </h1>
 				<p>Your order has been placed</p>
-				<a href="./">Go to Home</a>
+				<a style="color:black;" class="link" href="./index.html">Go to Home</a>
 				</div>
 		</div> 
 		';
