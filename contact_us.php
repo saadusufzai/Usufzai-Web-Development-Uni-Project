@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/connect.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -34,32 +35,41 @@
         </div>
       </nav>
       <section class="contact">
-        <div class="contact-box">
-          <form action="contact_us.php" method="POST">
-            <div class="intro">
-              <h1>Contact Us</h1>
-              <p>Please send your message below. We will get back to you at the earliest!</p>
-              
-            </div>
-           <div>
-              <label for="Message">Message</label> <br>
-              <textarea name="message"></textarea>
-            </div>
-            <div class="mail-name">
-              <div class="form-group">
-                <label for="Message">Your Name</label> <br>
-                <input type="text" name="name" id="name">
-              </div>
-              <div class="form-group">
-                <label for="Message">Your Email</label> <br>
-                <input type="email" name="email" id="email">
-              </div>
-            </div>
-            <div><input type="submit"  value="Send"></div>
-
-
-          </form>
-        </div>
+      <div class="contact-box">
+      <?php
+	
+    $fname = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    
+        $conn = new mysqli('localhost','root','','order');
+    
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+          }
+             $sql = "INSERT INTO contact(message,name,email) VALUES ('$message','$fname','$email')";
+    
+    
+        if($conn->query($sql) === TRUE){
+            echo'<div style="padding:20px" class="success">
+                    <div class="success-box">
+                    <h1>Thank you for contacting us </h1>
+                    <p>we will be soon in touch with you</p>
+                    <a  class="link" href="./index.html">Home</a>
+                    </div>
+            </div> 
+            ';
+            }
+        else{
+            echo ' <h1 class="succes" >There is somting wrong while connecting to DB 
+                         
+                </h1>';
+    
+        }
+        
+    
+    ?>
+    </div>
       </section>
 
 
