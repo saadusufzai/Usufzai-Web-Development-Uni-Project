@@ -35,7 +35,7 @@ form textarea{
     justify-content: space-between;
 }
 
-input[type=text],input[type=email]{
+input[type=text],input[type=email],input[type=password]{
     padding: 10px 10px !important;
     border: none;
     border-radius:3px ;
@@ -84,6 +84,9 @@ form{
 .social input[type=text]{
     border-right: 14px solid rgb(128, 206, 4) ;
 }
+
+
+
 
 @media(max-width:770px){
 

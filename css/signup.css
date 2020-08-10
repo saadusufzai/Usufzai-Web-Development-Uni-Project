@@ -1,0 +1,46 @@
+.signup{
+    background: url('../images/login.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    
+}
+
+.popup{
+    width: 80%;
+    height: 100vh;
+    padding: 5%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.562);
+
+}
+
+h1{
+    margin: 20px 0;
+}
+
+.popup input[type=submit]{
+    margin-top: 0;
+}
+
+.footernotes{
+    margin-top: 10%;
+    text-align: center;
+}
+.footernotes a{
+    color: rgb(94, 255, 0);
+}
+input[type=submit]{
+    margin: 10px 0 !important;
+    padding: 10px !important;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+@media(max-width:740px){
+    .popup{
+        width: 100%;
+    }
+}

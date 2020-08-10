@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -13,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order</title>
   </head>
-  <body onload='pop_up("./login.html")'>
+  <body>
     <div class="slider">
       <div class="menus">
         <i class="close fa fa-times fa-3x" aria-hidden="true"></i>
@@ -45,62 +46,23 @@
         </div>
       </div>
     </nav>
+<section class="login">
+      <div class="popup">
+      <form>
+        <h1>Sign In</h1>
+        <div>
+          <div><input placeholder="Email" required type="email" name="email" id="email" /></div>
+          <div><input placeholder="password" required type="password" name="password" id="password" /></div>
+        </div>
+        <div><input type="submit" value="Login" /></div>
+        <div class="footernotes">
+          <p>Don't have an account? <a href="./signup.html" >Sign Up</a></p>
+         
+        </div>
+      </form>
+    </div>
 
-    <section class="order">
-      <div class="order-box">
-        <h1 style="text-align: center; padding-top: 10px;">
-          Place Your Order Here !
-        </h1>
-        <form action="./php/connect.php" method="POST">
-          <div>
-            <label for="name">Your Name</label><br />
-            <input
-              placeholder="John Doe"
-              type="text"
-              name="firstName"
-              id="name"
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label><br />
-            <input
-              placeholder="user@example.com"
-              type="email"
-              name="email"
-              id="email"
-            />
-          </div>
-          <div class="form-group">
-            <label>Select your package</label><br />
-            <select
-              class="package"
-              id="package"
-              name="package"
-              onchange="onChange()"
-            >
-              <option value="Trial">Trial (0$)</option>
-              <option value="Pro">Pro (30$)</option>
-              <option value="Plus">Plus (45$)</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Select payment method</label><br />
-            <select name="method">
-              <option name="method" value="Bank Transfer">Bank Transfer</option>
-              <option name="method" value="Easy Paisa">Easy Paisa</option>
-              <option name="method" value="Jazz Cash">Jaaz Cash</option>
-            </select>
-          </div>
-          <div class="form-group price">
-            <h2>Price</h2>
-
-            <h2 class="total">2000</h2>
-          </div>
-          <input type="submit" name="insert" value="Pay" />
-        </form>
-      </div>
-    </section>
+  </section>
 
     <section class="see-more">
       <p>Need help? Call our award-winning support team at +92 332 687 7676</p>
@@ -154,23 +116,5 @@
       </div>
     </footer>
     <script src="./main.js"></script>
-    <script>
-      document.querySelector(".total").innerHTML = "0$";
-      const onChange = () => {
-        let e = document.querySelector("#package");
-        let opt = e.options[e.selectedIndex].value;
-        let total = "0$";
-        console.log(total);
-        console.log(opt);
-        if (opt === "Pro") {
-          total = "30$";
-        } else if (opt === "Plus") {
-          total = "45$";
-        } else {
-          total = "0$";
-        }
-        document.querySelector(".total").innerHTML = total;
-      };
-    </script>
   </body>
 </html>
