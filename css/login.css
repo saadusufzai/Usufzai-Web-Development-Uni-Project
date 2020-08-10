@@ -1,5 +1,5 @@
 .login{
-    background: url('../images/login.jpg') no-repeat center;
+    background: url('../images/stop.jpg') no-repeat center;
     background-size: cover;
     color: #fff;
     
@@ -10,7 +10,7 @@
     height: 100vh;
     padding: 5%;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.822);
 
 }
 

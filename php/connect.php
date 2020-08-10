@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/connect.css">
+    <link rel="stylesheet" href=".././css/style.css" />
+    <link rel="stylesheet" href=".././css/connect.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -18,16 +18,16 @@
         <div class="menus">
           <i class="close fa fa-times fa-3x" aria-hidden="true"></i>
           <ul>
-            <li><a href="./index.html">home  <span>home is where you start</span></a></li>
-            <li><a href="./about.html">about  <span>know more about our work</span> </a></li>
-            <li><a href="./order.html">order  <span>order your package now</span></a></li>
-            <li><a href="./contact.html">contact  <span>confused? contact us right now</span></a></li>
+            <li><a href="../index.html">home  <span>home is where you start</span></a></li>
+            <li><a href="../about.html">about  <span>know more about our work</span> </a></li>
+            <li><a href="../order.html">order  <span>order your package now</span></a></li>
+            <li><a href="../contact.html">contact  <span>confused? contact us right now</span></a></li>
           </ul>
         </div>
       </div>
       <nav class="nav-bar">
         <div class="inner-nav">
-            <div class="logo"><a href="./index.html">TECHWA</a></div>
+            <div class="logo"><a href="../index.html">TECHWA</a></div>
           <div class="menu">
             <i class=" bars fa fa-bars fa-2x" aria-hidden="true"></i>
           </div>
@@ -55,7 +55,7 @@ $method = $_POST['method'];
 				<div class="success-box">
 				<h1>Thanks for choosing TECHWA </h1>
 				<p>Your order has been placed</p>
-				<a style="color:black;" class="link" href="./index.html">Go to Home</a>
+				<a style="color:black;" class="link" href="../index.html">Go to Home</a>
 				</div>
 		</div> 
 		';
@@ -107,7 +107,7 @@ $method = $_POST['method'];
           Copyright 2020  techwa.io | All rights are reserved by TECHWA.IO | Developed by Saad Aslam & Talha Maiken
         </div>
       </footer>
-      <script src="./main.js"></script>
+      <script src="../main.js"></script>
       <script src="./db_connection.js"></script>
 </body>
 </html>

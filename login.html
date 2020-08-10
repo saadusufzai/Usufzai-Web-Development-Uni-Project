@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/order.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order</title>
+    <title>Sign In</title>
   </head>
   <body>
     <div class="slider">
@@ -28,7 +28,7 @@
             </a>
           </li>
           <li>
-            <a href="./order.html">order <span>order your package now</span></a>
+            <a href="./signup.html">order <span>order your package now</span></a>
           </li>
           <li>
             <a href="./contact.html"
@@ -48,11 +48,15 @@
     </nav>
 <section class="login">
       <div class="popup">
-      <form>
+      <form action="./php/login.php" method="POST">
         <h1>Sign In</h1>
         <div>
-          <div><input placeholder="Email" required type="email" name="email" id="email" /></div>
-          <div><input placeholder="password" required type="password" name="password" id="password" /></div>
+          <div>
+            <div><label for="email">Email</label></div>
+            <input placeholder="Email" required type="email" name="email" id="email" /></div>
+          <div>
+            <div><label for="name">Password</label></div>
+            <input placeholder="password" required type="password" name="password" id="password" /></div>
         </div>
         <div><input type="submit" value="Login" /></div>
         <div class="footernotes">

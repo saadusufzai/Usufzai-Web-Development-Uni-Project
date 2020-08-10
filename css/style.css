@@ -395,6 +395,11 @@ footer{
     color: rgb(150, 137, 137);
     margin-top: 18px;
     cursor: pointer;
+    animation: all 2s ease-in-out;
+}
+
+.inner-footer ul li:hover{
+    color:#fff !important
 }
 
 li i{
