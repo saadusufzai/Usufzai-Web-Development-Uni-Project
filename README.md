@@ -9,7 +9,8 @@ to use it as a full stack app clone this repo or fork it
 
 Im also using Continuous Integration and Development (CI/CD) throught github actions.
 Site is hosted on Github and deployed on surge 
-#link :http://sweet-volleyball.surge.sh/
+
+# Demo [Click Here](http://sweet-volleyball.surge.sh/)
 
 # Want to use this repo? 
 feel free to clone and use this project. 
